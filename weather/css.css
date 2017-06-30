@@ -1,0 +1,28 @@
+.wrapper {
+    width: 80%;
+    color: white;
+    margin: 100px auto;
+}
+
+p {
+    margin: 0px;
+}
+
+body {
+    background-color: #26C281;
+    ;
+}
+
+footer,
+footer a {
+    color: white;
+}
+
+.wrapper {
+    border: solid white 4px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+#icon {
+    min-height: 100px;
+}
