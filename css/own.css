@@ -1,3 +1,4 @@
+/*Beginning of <nav>*/
 .navbar a {
   color: #fff;
 }
@@ -8,52 +9,81 @@
   background-color: #545454;
 }
 
+.navbar-nav>li>a {
+  font-size: 1.3em;
+}
+
 .nav>li>a:focus, .nav>li>a:hover {
-  font-weight: bold;
   background-color: transparent;
 }
 
 @media (max-width: 700px) {
   .navbar-nav>li {
+    font-weight: bold;
     text-align: center;
-    background-color: #2F0743;
+    background-color: #333;
+    border-top: 1px white solid;
   }
-  .navbar-nav>li>a {
-    color: white;
+  div.navbar-header > a {
+  font-size: 1.2em;
+  }
+  #header {
+    font-size: 10px;
   }
 }
 
-.jumbotron {
+.navbar-header>a {
+  font-size: 1.5em;
+
+}
+
+/* Beginning of <body> */
+
+#header {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+#header .slide {
+  position: absolute;
+  height: 100%;
+  width: 5400px;
+  background: url("/img/science.png") repeat-x;
+  height: 300px;
+  width: 3000px;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+    }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+      }
+}
+
+.quoteText {
+  padding: 0 30px 0 30px;
+  position: absolute;
+  margin-top: 100px;
+  text-align: center;
   color: white;
-  background: #41295a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-.h1 {
-  margin: 50px 0 0 0;
+  font-size: 2.5em;
   text-transform: uppercase;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Fredoka One', cursive;
 }
-.h1 span#a {
-display:inline;
-}
-.h1:hover span#a {
-display:none;
-}
-.h1 span#b {
-display:none;
-}
-.h1:hover span#b {
-display:inline;
-}
+
 
 .portfolio, .portfolio a {
   font-size: 1.4em;
 }
-.footer {
-margin-top: 20px;
-padding: 5px 0 5px 0;
-font-size: 1.2em;
+
+/*Beginning of the footer*/
+footer {
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
