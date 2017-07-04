@@ -1,43 +1,11 @@
 /*Beginning of <nav>*/
-.navbar a {
-  color: #fff;
-}
-.navbar-toggle {
-  background-color: #f7f7f7;
-}
-.navbar-toggle .icon-bar {
-  background-color: #545454;
-}
 
-.navbar-nav>li>a {
-  font-size: 1.3em;
-}
-
-.nav>li>a:focus, .nav>li>a:hover {
-  background-color: transparent;
-}
-
-@media (max-width: 700px) {
-  .navbar-nav>li {
-    font-weight: bold;
-    text-align: center;
-    background-color: #333;
-    border-top: 1px white solid;
-  }
-  div.navbar-header > a {
-  font-size: 1.2em;
-  }
-  #header {
-    font-size: 10px;
-  }
-}
-
-.navbar-header>a {
-  font-size: 1.5em;
-
-}
 
 /* Beginning of <body> */
+body {
+  font-family: 'Quicksand', sans-serif;
+
+}
 
 #header {
     position: relative;
@@ -50,10 +18,10 @@
   position: absolute;
   height: 100%;
   width: 5400px;
-  background: url("/img/science.png") repeat-x;
+  background: url("/img/asteroids.jpg") repeat-x;
   height: 300px;
   width: 3000px;
-  animation: slide 60s linear infinite;
+  animation: slide 90s linear infinite;
 }
 
 @keyframes slide {
@@ -68,22 +36,85 @@
 .quoteText {
   padding: 0 30px 0 30px;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
   color: white;
+  text-shadow: 2px 2px black;
   font-size: 2.5em;
   text-transform: uppercase;
   font-family: 'Fredoka One', cursive;
 }
 
+@media (max-width: 760px) {
+    .quoteText {
+      margin-top: 50px;
+      font-size: 1.6em;
+    }
 
-.portfolio, .portfolio a {
-  font-size: 1.4em;
+
 }
 
+/* Start of content */
+.container h1 {
+  margin-top: 30px;
+}
+
+.projects .row {
+  margin-top: 20px;
+}
+
+
 /*Beginning of the footer*/
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+}
+
+/* Taller footer on small screens */
+@media (max-width: 34em) {
+    body {
+      margin-bottom: 500px;
+    }
+    .footer {
+      height: 500px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 footer {
-  background-color: black;
-  color: white;
-  font-weight: bold;
+  padding-top: 30px;
+  background-color: #292c2f!important;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
 }
