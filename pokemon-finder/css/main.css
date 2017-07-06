@@ -1,6 +1,6 @@
 body  {
   background-color: #79c9fa;
-  background-image: url('/img/pokemons.jpg');
+  background-image: url('img/pokemons.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -33,7 +33,7 @@ body  {
 }
 .pokeballcentre {
   min-height: 90px;
-  background-image: url('/img/centre.jpg');
+  background-image: url('img/centre.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
