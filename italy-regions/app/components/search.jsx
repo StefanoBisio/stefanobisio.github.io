@@ -1,6 +1,6 @@
 var React = require ('react');
 
-
+// Renders a single result. The list will be generated in the "Results" component through a .map (line 49)
 class Result extends React.Component {
 
 	render(){
@@ -20,18 +20,19 @@ class Result extends React.Component {
 	}
 
 }
-
+// Takes query, compares to database and renders multiple Result components through a .map()
 class Results extends React.Component {
 
 	constructor (props) {
 		super(props);
 		this.state = {
+			// Displaying all regions at the beginning
 			foundRegions: props.regions
 		}
 	}
-
+	// Invoked before a component receives new props
 	componentWillReceiveProps(nextProps) {
-		//compare query (nextProps) with the fields of database
+		//compare query (nextProps) with the fields of database and update state if .match()
 		var foundRegions = nextProps.regions.filter(region => {
 			return region.name.toLowerCase().match(nextProps.query.toLowerCase())||
 				   region.dishes.toLowerCase().match(nextProps.query.toLowerCase()) ||
@@ -57,7 +58,7 @@ class Results extends React.Component {
 	}
 }
 
-
+// Renders input, listens for change in the input and gives the value to the onQuery prop (line 94)
 class SearchBar extends React.Component {
 
 	handleQuery(event) {
@@ -66,6 +67,7 @@ class SearchBar extends React.Component {
 
 	render() {
 		return(
+			// ========== REAL TIME SEARCH STARTS HERE ==============
 			<div className="search-bar">
 				<input className="form-control" onChange={this.handleQuery.bind(this)} placeholder="Eg: Milan, Tuscany, Risotto"/>
 			</div>
@@ -73,7 +75,7 @@ class SearchBar extends React.Component {
 	}
 }
 
-
+// Takes query from SearchBar, sets it in its state and passes it as prop in line 95. Keep going on line 34
 class Search extends React.Component {
 	constructor(props) {
 		super(props);
@@ -81,7 +83,7 @@ class Search extends React.Component {
 			query : ''
 		};
 	}
-
+	
 	handleQuery(query) {
 		this.setState({'query': query.toLowerCase().trim()})
 	}
