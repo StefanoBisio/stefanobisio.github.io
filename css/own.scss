@@ -6,12 +6,13 @@ html {
 
 /* Beginning of Body */
 body {
+
   font-family: 'Quicksand', sans-serif;
 }
 
 #header {
     position: relative;
-    height: 300px;
+    height: 250px;
     width: 100%;
     overflow: hidden;
     .slide {
@@ -45,9 +46,7 @@ body {
 }
 
 .quoteText {
-  padding: 0 30px 0 30px;
   position: absolute;
-  margin-top: 60px;
   text-align: center;
   color: white;
   text-shadow: 2px 2px black;
@@ -55,13 +54,14 @@ body {
   text-transform: uppercase;
   font-family: 'Fredoka One', cursive;
     @media screen and (max-width: 760px) {
-      margin-top: 80px;
+      font-size: 2em;
+    }
+    @media screen and (max-width: 480px) {
       font-size: 1.7em;
     }
 
 }
 
-/* Start of content */
 .container h1 {
   margin-top: 30px;
 }
@@ -70,19 +70,9 @@ body {
   .row{
     margin-top: 20px;
   }
-  .card {
-    -webkit-transition:all 0.1s ease-out;
-    -moz-transition:all 0.1s ease-out;
-    -ms-transition:all 0.1s ease-out;
-    -o-transition:all 0.1s ease-out;
-    transition:all 0.1s ease-out;
-  }
+
   .card:hover {
-    -webkit-transform:scale(1.1);
-    -moz-transform:scale(1.1);
-    -ms-transform:scale(1.1);
-    -o-transform:scale(1.1);
-    transform:scale(1.1);
+    background-color: rgb(249,249,249);
   } 
 }
 
