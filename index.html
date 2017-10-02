@@ -47,8 +47,6 @@
               <div class="row">
 
                 <!-- Featured project 1 modal -->
-                <!-- Positioned outside of col because of conflict with css transition -->
-
                 <div class="modal fade bs-featured1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                   <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content p-3">
@@ -90,11 +88,10 @@
                 </div>
 
                 <!-- Featured project 2 modal -->
-                <!-- Positioned outside of col because of conflict with css transition -->
                 <div class="modal fade bs-featured2-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                   <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content p-4">
-                      <h2 class="py-3">Regions of Italy</h2>
+                      <h2 class="py-3">React Productivity Timer</h2>
                       <h5>
                         Technologies used:
                       </h5>
@@ -107,13 +104,12 @@
                         About:
                       </h5>
                       <p>
-                        Search through the regions of italy and their signature dishes.
-                        A page showcasing real time search achieved through React component's lifecycles.
-                        Thanks to Barilla Academy for the info.
+                        A React app that takes a time duration and alerts you at the end. For people that forget to take breaks.<br>
+                        This is the project that made me understand React the most so far. Includes moment.js, conditional rendering and other tricks I enjoyed learning, such as deploying on <a href="http://surge.sh" target="_blank" title="Surge">Surge.sh</a>.
                       </p>
 
-                      <a href="/italy-regions/build/" target="_blank" class="btn btn-success btn-block">Demo</a>
-                      <a href="https://github.com/StefanoBisio/regions-italy" target="_blank" class=" btn btn-primary btn-block">Code</a>
+                      <a href="http://prodtimer.surge.sh" target="_blank" class="btn btn-success btn-block">Demo</a>
+                      <a href="https://github.com/StefanoBisio/productivity-timer" target="_blank" class=" btn btn-primary btn-block">Code</a>
                       <a href="#" data-dismiss="modal" class=" btn btn-danger btn-block">Close</a>
 
                    </div>
@@ -123,19 +119,32 @@
                 <div class="col-md-6 ">
                   <div class="card">
                     <div class="card-block">
-                       <h4 class="card-title">Regions of Italy</h4>
-                       <h6 class="card-subtitle mb-2 text-muted">A React.js demo</h6>
-                       <p class="card-text">Search through the regions of italy and their signature dishes.
-                        A page showcasing real time search achieved through react component's lifecycles.
-                        Thanks to barilla academy for the info.</p>
+                       <h4 class="card-title">React Productivity Timer</h4>
+                       <h6 class="card-subtitle mb-2 text-muted">A React.js single-page app</h6>
+                       <p class="card-text">A React app that takes a time duration and alerts you at the end. For people that forget to take breaks.</p>
                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-featured2-modal-lg">Read more</button>
 
                     </div>
                   </div>
                 </div>
               </div> <!-- featured row -->
-
+              
+              <!-- row 1 -->
               <div class="row">
+                <div class="col-md-4 ">
+                    <div class="card">
+                      <div class="card-block">
+                        <h4 class="card-title">Regions of Italy</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">A React.js single-page app</h6>
+                        <p class="card-text">Search through the regions of italy and their signature dishes.
+                        A page showcasing real time search achieved through React component's lifecycles.
+                        </p>
+                        <a href="/italy-regions/build/" class="card-link btn btn-primary">Demo</a>
+                        <a href="https://github.com/StefanoBisio/regions-italy" target="_blank" title="Regions of Italy on Github" class="card-link">Code</a>
+                      </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 ">
                     <div class="card">
                       <div class="card-block">
@@ -160,6 +169,10 @@
                     </div>
                   </div>
 
+              </div><!-- End Row 1-->
+              
+              <!-- row 2 -->
+              <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                       <div class="card-block">
@@ -171,21 +184,6 @@
                       </div>
                     </div>
                 </div>
-
-              </div><!-- End Row 1-->
-
-              <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                      <div class="card-block">
-                        <h4 class="card-title">Movie Quotes Generator</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">CSS and JS</h6>
-                        <p class="card-text">The interface is quite simple. It uses an array of hand picked quotes. Movies are my passion.</p>
-                        <a href="/moviequotes" class="card-link btn btn-primary">Demo</a>
-                        <a href="https://github.com/StefanoBisio/moviequotesgenerator" target="_blank" title="Movie Quotes Generator on Github" class="card-link">Code</a>
-                      </div>
-                    </div>
-                  </div>
 
                <div class="col-md-4">
                   <div class="card">
@@ -211,9 +209,11 @@
                   </div>
                 </div>
               </div> <!-- End row 2-->
+
+              <!-- row 3 -->
               <div class="row">
 
-                <!-- Positioned outside of col because of conflict with css transition -->
+                <!-- templates modal -->
                 <div class="modal fade bs-featured3-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                   <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content p-3">
@@ -252,7 +252,19 @@
                      </div>
                   </div>
                 </div>
-              </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-block">
+                        <h4 class="card-title">Movie Quotes Generator</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">CSS and JS</h6>
+                        <p class="card-text">The interface is quite simple. It uses an array of hand picked quotes. Movies are my passion.</p>
+                        <a href="/moviequotes" class="card-link btn btn-primary">Demo</a>
+                        <a href="https://github.com/StefanoBisio/moviequotesgenerator" target="_blank" title="Movie Quotes Generator on Github" class="card-link">Code</a>
+                      </div>
+                    </div>
+                  </div>
+              </div> <!-- End final row -->
             </div> <!-- End Projects div -->
     </div> <!-- container -->
 
