@@ -1,0 +1,134 @@
+body{
+    font-family: 'Cantata One', serif;
+    margin:0;
+    background-image: url(../img/flowerpower.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Spicy Rice', cursive;
+}
+
+.hidden {
+    display:none;
+}
+
+#austin {
+    max-width: 130px;
+    max-height: 130px;
+    border-radius: 50%;
+}
+
+.content_container .item {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.content_container .item.panel_one {
+    display:block;
+}
+
+.content_container .wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    border: 8px solid white;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 10px 10px 20px #000000;
+}
+
+.start_quiz {
+    border: 1px solid #cccccc;
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: #9a9a9a;
+    cursor:pointer;
+}
+.start_quiz.started {
+    background: #3f51b5;
+    color: #fff;
+}
+
+
+/* PANELS */
+
+.panel_two .wrapper,
+.panel_three .wrapper,
+.panel_four .wrapper,
+.panel_five .wrapper,
+.panel_six .wrapper,
+.panel_seven .wrapper,
+.panel_eight .wrapper,
+.panel_nine  .wrapper {
+    display:none;
+}
+
+/* SELECTABLE ELEMENTS */
+
+.options {
+    height:200px;
+}
+.options div {
+    display: none;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #3f51b5;
+    border-radius: 40px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.options div.active {
+    color: white;
+    background: #f68713;
+
+}
+
+.submit {
+    border: 1px solid #cccccc;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background: #3f51b5;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+/* PROGRESS AND ERROR */
+
+.error {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border: 8px solid white;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 10px 10px 20px #000000
+}
+
+.progress {
+    position: fixed;
+    bottom:0;
+    background: #d0d0d0;
+    width:100%;
+}
+
+.bar {
+    width:0%;
+    height:5px;
+    background: #00BCD4;
+}

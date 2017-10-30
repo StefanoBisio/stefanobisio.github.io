@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Cantata+One|Spicy+Rice" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css" crossorigin="anonymous">
+
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+
+
+    <div class="content_container">
+
+        <!-- PANEL ONE -->
+        <div class="item panel_one hidden" data-panel="0">
+            <div class="wrapper">
+                <h1 class="hidden">The Austin Powers Movie Quiz</h1>
+                <div class="start_quiz">
+                    Start Quiz
+                </div>
+            </div>
+        </div>
+
+        <!--  PANEL TWO -->
+        <div class="item panel_two hidden" data-panel="1">
+            <div class="wrapper">
+
+                <h3>In the 1997 movie, what song is playing when Austin is dancing in the streets of London?
+                </h3>
+                <div class="options">
+                    <div>Somebody to Love</div>
+                    <div>Soul Bossanova</div>
+                    <div>Swinger's Paradise</div>
+                </div>
+                <div class="submit" data-next="2"> Submit </div>
+            </div>
+        </div>
+
+        <!--  PANEL THREE  -->
+        <div class="item panel_three hidden" data-panel="2">
+            <div class="wrapper">
+
+                <h3>What is Austin's middle name?</h3>
+                <div class="options">
+                    <div>Danger</div>
+                    <div>Mystery</div>
+                    <div>Mojo</div>
+                </div>
+                <div class="submit" data-next="3"> Submit </div>
+            </div>
+        </div>
+
+        <!--  PANEL FOUR  -->
+        <div class="item panel_four hidden" data-panel="3">
+            <div class="wrapper">
+
+                <h3>On the moon base in the first movie, for what does Dr. Evil say he asked?</h3>
+                <div class="options">
+                    <div>Sharks with lasers beams on their heads</div>
+                    <div>A freakin' rotating chair</div>
+                    <div>A clone of himself</div>
+                </div>
+                <div class="submit" data-next="4"> Submit </div>
+            </div>
+        </div>
+
+        <!--  PANEL FIVE  -->
+        <div class="item panel_five hidden" data-panel="4">
+            <div class="wrapper">
+
+                <h3>What is the name of Dr. Evil's pet?</h3>
+                <div class="options">
+                    <div>Mr. Bogglesworth</div>
+                    <div>Mr. Biggleswrath</div>
+                    <div>Mr. Bigglesworth</div>
+                </div>
+                <div class="submit" data-next="5"> Submit </div>
+            </div>
+        </div>
+
+
+        <!--  PANEL SIX  -->
+        <div class="item panel_six hidden" data-panel="5">
+            <div class="wrapper">
+
+                <h3>There are only 2 things in this world that scare Austin Powers: Nuclear war and...</h3>
+                <div class="options">
+                    <div>Carnies</div>
+                    <div>Cabbage</div>
+                    <div>Dr. Evil</div>
+                </div>
+                <div class="submit" data-next="6"> Submit </div>
+            </div>
+        </div>
+        
+        <!--  PANEL SEVEN  -->
+        <div class="item panel_seven hidden" data-panel="6">
+            <div class="wrapper">
+
+                <h3>In the first scene of "Goldmember" what actor plays Austin Powers?</h3>
+                <div class="options">
+                    <div>Mike Myers</div>
+                    <div>Brad Pitt</div>
+                    <div>Tom Cruise</div>
+                </div>
+                <div class="submit" data-next="7"> Submit </div>
+            </div>
+        </div>
+        
+        <!--  PANEL EIGHT  -->
+        <div class="item panel_eight hidden" data-panel="7">
+            <div class="wrapper">
+
+                <h3>In "International Man of Mistery" what song is sung by Burt Bacharach on the Bus in Las Vegas?</h3>
+                <div class="options">
+                    <div>What the World Needs Now</div>
+                    <div>I Say a Little Prayer</div>
+                    <div>The Look of Love</div>
+                </div>
+                <div class="submit" data-next="8"> Submit </div>
+            </div>
+        </div>
+
+        <!-- final -->
+        <div class="item panel_nine hidden" data-panel="8">
+            <div class="wrapper">
+            <img id="austin" src="img/austin.jpg" />
+                <h1>Groovy baby!</h1>
+                <p>You scored <span id="rightCounter"></span> out of 7!</p>
+                
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="error">
+        <p>Please make a selection</p>
+    </div>
+    <div class="progress">
+        <div class="bar"></div>
+    </div>
+
+
+
+    </body>
+</html>

@@ -13,7 +13,7 @@ $(document).ready(function(){
     }
   });
   $('#random').click(function() {
-    var randomId = Math.floor(Math.random()*721);
+    var randomId = Math.floor(Math.random()*803);
     var url = "https://pokeapi.co/api/v2/pokemon/"+ randomId;
     findPokemon(randomId);
 

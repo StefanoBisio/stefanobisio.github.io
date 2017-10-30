@@ -1,6 +1,6 @@
 body  {
   background-color: #79c9fa;
-  background-image: url('pokemons.jpg');
+  background-image: url('https://github.com/StefanoBisio/pokemon-finder/blob/master/css/pokemons.jpg?raw=true');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -33,7 +33,7 @@ body  {
 }
 .pokeballcentre {
   min-height: 90px;
-  background-image: url('centre.jpg');
+  background-image: url('https://raw.githubusercontent.com/StefanoBisio/pokemon-finder/master/css/centre.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -51,7 +51,7 @@ button {
   margin-left: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
     .container {
       padding: 0px;
       max-width: 90%;
