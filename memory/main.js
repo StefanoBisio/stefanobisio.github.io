@@ -23,11 +23,11 @@ function gameOn() {
   var i=0;
 
   // all the animals! = ["leopard","snail","deer","parrot","rabbit","bear","lion","fish","crab","cow","pig","panda","corgi","turtle","rhinoceros","shark"];
-  var animals = ["turtle","snail","corgi","parrot","rabbit","bear","panda","fish","crab","pig"];
+  var animals = ["turtle","snail","corgi","parrot","rabbit","bear","panda","fish","crab","pig","shark","rhinoceros"];
   var images = [];
 
   // get images, place them in an array & randomize the order
-  for (i = 0; i < 10; i++) { 
+  for (i = 0; i < 12; i++) { 
     var img = 'https://png.icons8.com/' + animals[i];
     images.push(img);
     images.push(img);
@@ -36,7 +36,7 @@ function gameOn() {
 
   // output images then hide them
   var output = "<ul>"; 
-  for (var i = 0; i < 20; i++) { 
+  for (var i = 0; i < 24; i++) { 
     output += "<li>";
     output += "<img src = '" + images[i] + "/color/96' width='96' height='96''/>";
     output += "</li>";
@@ -48,7 +48,7 @@ function gameOn() {
   var guess1 = "";
   var guess2 = "";
   var count = 0;
-  var winCount=10;
+  var winCount=12;
 
   $("li").click(function() {
     if ((count < 2) === true) {
@@ -87,6 +87,7 @@ function gameOn() {
             $("li").children("img[src='" + guess2 + "']").addClass("match");
             } else {
               $('h1').html('Awesome! You beat the game!');
+              $('img').addClass('won');
               $('body').scrollTop(0);
               $('#start').html("Restart");
 
