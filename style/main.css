@@ -40,6 +40,13 @@ hr {
 .swipe {
 	visibility: hidden;
 }
+.arrowdown {
+  position: absolute;
+  bottom: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
 .finger {
  	-webkit-animation: animation 2000ms linear infinite both;
  	animation: animation 2000ms linear infinite both;
