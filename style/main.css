@@ -3,9 +3,6 @@
 body {
 	color: white;
 }
-.card {
-	color: black;
-}
 h1 {
 	font-family: 'Rubik', sans-serif;
 	font-size: 8rem;
@@ -35,6 +32,11 @@ hr {
 }
 .skills .btn {
 	margin: 1px;
+}
+.card {
+  color: black;
+  max-width: 650px;
+  margin: 10px auto;
 }
 .card img {
 	background-position: center;
@@ -160,9 +162,8 @@ hr {
       rgba(0, 0, 0, 0.55)
     ),url('../img/me.jpg');
 	background-position: center;
-
-
 }
+
 #section1 .fp-bg{
 	background-image: url('../img/office.jpg');
 	background-position: center;
@@ -213,7 +214,6 @@ hr {
 	border: 1px solid black;
 }
 
-
 @media only screen and (max-width : 768px) {
 	h1 {
 		font-size: 5rem;
@@ -237,4 +237,3 @@ hr {
 		padding:12px;
 	}
 }
-

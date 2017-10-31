@@ -3,7 +3,7 @@ $(document).ready(function() {
     (function startQuiz(){
         // Object to store answers
         this.settings  = {
-            correctAnswers:["Soul Bossanova", "Danger", "Sharks with lasers beams on their heads", "Mr. Bigglesworth", "Carnies","Tom Cruise","What the World Needs Now"],
+            correctAnswers:["Soul Bossanova", "Danger", "Sharks with laser beams on their heads", "Mr. Bigglesworth", "Carnies","Tom Cruise","What the World Needs Now"],
             results:[]
         };
         /* Count of correct answers*/
@@ -96,7 +96,7 @@ $(document).ready(function() {
 
         /* Progress bar */
         this.showProgress = function(panel){
-            // increment width of progress bar
+            // increment width of progress bar, 100/number of questions
             $('.progress .bar').animate({"width": "+=14.28%"},500);
             // When we click on Submit, the $this will be THE NEXT set of answers, that is why 'panel' has a -1
             var options = $('div[data-panel="'+ (panel -1) +'"]').find('.options');
