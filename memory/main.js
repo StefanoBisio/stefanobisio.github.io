@@ -22,24 +22,25 @@ $('#start').on("click", function(){
 function gameOn() {
   var i=0;
 
-  // all the animals! = ["leopard","snail","deer","parrot","rabbit","bear","lion","fish","crab","cow","pig","panda","corgi","turtle","rhinoceros","shark"];
   var animals = ["turtle","snail","corgi","parrot","rabbit","bear","panda","fish","crab","pig","shark","rhinoceros"];
   var images = [];
 
   // get images, place them in an array & randomize the order
-  for (i = 0; i < 12; i++) { 
-    var img = 'https://png.icons8.com/' + animals[i];
-    images.push(img);
-    images.push(img);
+  for (i = 0; i < 12; i++) {
+    var gridImg = 'icons/' + animals[i] + '.png';
+    images.push(gridImg);
+    images.push(gridImg);
   }
   randomizeImages();
 
   // output images then hide them
-  var output = "<ul>"; 
-  for (var i = 0; i < 24; i++) { 
+  var output = "<ul>";
+  for (var i = 0; i < 24; i++) {
     output += "<li>";
-    output += "<img src = '" + images[i] + "/color/96' width='96' height='96''/>";
+    output += "<img src = " + images[i] + " width='96' height='96''/>";
     output += "</li>";
+    console.log(images);
+
   }
   output += "</ul>";
   document.getElementById("grid").innerHTML = output;
@@ -52,24 +53,24 @@ function gameOn() {
 
   $("li").click(function() {
     if ((count < 2) === true) {
-      
+
       // increment guess count, show image, mark it as face up
       count++;
       $(this).children("img").show();
       // $(this).children("img").addClass("face-up");
-      
+
       //First turn
-      if (count === 1 ) { 
-        guess1 = $(this).children("img").attr("src"); 
-      }   
-      
+      if (count === 1 ) {
+        guess1 = $(this).children("img").attr("src");
+      }
+
       //Second turn
-      else { 
-        guess2 = $(this).children("img").attr("src"); 
-        
+      else {
+        guess2 = $(this).children("img").attr("src");
+
         // Checking for ing pair
         if (guess1 === guess2) {
-          winCount --; 
+          winCount --;
 
           // Checking for winning state (no more pairs)
           if (winCount>0) {
@@ -83,7 +84,7 @@ function gameOn() {
             setTimeout(function positiveExclamation(){
               $('h1').html('Hello and welcome to memory');
             }, 1000);
-            
+
             $("li").children("img[src='" + guess2 + "']").addClass("match");
             } else {
               $('h1').html('Awesome! You beat the game!');
@@ -92,11 +93,11 @@ function gameOn() {
               $('#start').html("Restart");
 
 
-            } 
-        } 
-        
+            }
+        }
+
         // If miss, hide after 1 second
-        else { 
+        else {
           setTimeout(function() {
             $("img").not(".match").hide();
             $("img").not(".match").removeClass("face-up");
@@ -104,7 +105,7 @@ function gameOn() {
         }
 
         // Resetting count
-        count = 0; 
+        count = 0;
       }
     }
   });
@@ -122,7 +123,7 @@ function gameOn() {
         this[j] = temp;
       }
     };
-    
+
     images.randomize();
   }
 
